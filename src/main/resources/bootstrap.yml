@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Prempeh-Gyan/config-repo
+          search-paths:
+          - services
+        encrypt:
+          enabled: false
+      enabled: false
+encrypt:
+  key: ALOMO2SHOTSFürSIE
+management:
+  security:
+    enabled: false
