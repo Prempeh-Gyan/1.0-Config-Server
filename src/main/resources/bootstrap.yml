@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Prempeh-Gyan/config-repo
+          uri: https://github.com/Prempeh-Gyan/1.1-Config-Repo
           search-paths:
           - services
         encrypt:
@@ -16,3 +16,5 @@ encrypt:
 management:
   security:
     enabled: false
+    
+    
