@@ -5,9 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Prempeh-Gyan/1.1-Config-Repo
+          uri: https://github.com/Prempeh-Gyan/1.1-Config-Repo # This config server is integrated with GitHub to serve property files from a repository
           search-paths:
-          - services
+          - services/** # Root folder in GitHub repository from which the config server should look for property files
         encrypt:
           enabled: false
       enabled: false
