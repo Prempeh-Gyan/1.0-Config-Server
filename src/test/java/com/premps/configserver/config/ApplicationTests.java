@@ -27,24 +27,17 @@ public class ApplicationTests {
 
 		assertTrue(true);
 
-		String URL = gitHubConfigRepo;
-
 		try {
-			System.out.println(gitHubConfigRepo);
-			assertThat(getResponseCode(gitHubConfigRepo) != 404);
+			URL u = new URL(gitHubConfigRepo);
+			HttpURLConnection huc = (HttpURLConnection) u.openConnection();
+			huc.setRequestMethod("GET");
+			huc.connect();
+			assertThat(huc.getResponseCode() != 404);
 		} catch (MalformedURLException e) {
 			fail(e.getMessage());
 		} catch (IOException e) {
 			fail(e.getMessage());
 		}
-	}
-
-	public static int getResponseCode(String urlString) throws MalformedURLException, IOException {
-		URL u = new URL(urlString);
-		HttpURLConnection huc = (HttpURLConnection) u.openConnection();
-		huc.setRequestMethod("GET");
-		huc.connect();
-		return huc.getResponseCode();
 	}
 
 }
