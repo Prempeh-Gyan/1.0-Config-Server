@@ -20,11 +20,11 @@ Get the project from the source repository
 ### About This Service
 This Config-Service centralizes the management of configuration files from all the `Bootiful Microservices` in this series.
 
-As any of the services in the `Bootiful Microservices` series moves through the deployment pipeline from development to test and into production, this Config-Service manages the configuration between environments and guarantees that the application has everything it needs to run when you migrate it.
+As any of the services in the series moves through the deployment pipeline from development to test and into production, the Config-Service manages the configuration between its environments and guarantees that the application has everything it needs to run when migrated.
 
-For locating property sources, the Config-Server has been configured to clone the [`git repository : Config-Repo`](https://github.com/Prempeh-Gyan/1.1-Config-Repo) and use it for initialization.
+For locating property sources, the Config-Server is configured to clone the [`git repository : Config-Repo`](https://github.com/Prempeh-Gyan/1.1-Config-Repo), and use it for initialization.
 
 ### Running the Project
 To run the project, first navigate into the source directory `cd 1.0-Config-Service` and execute the following command:
 
-* `mvn spring-boot:run`:
+* `mvn spring-boot:run`
