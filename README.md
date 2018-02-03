@@ -3,7 +3,7 @@
 #### Navigation Guide: [`Next Repo: Config-Repo`](https://github.com/Prempeh-Gyan/1.1-Config-Repo)
 
 ### Travis
-[![Build Status](https://travis-ci.org/Prempeh-Gyan/1.0-Config-Service.svg)](https://travis-ci.org/Prempeh-Gyan/1.0-Config-Service)
+[![Build Status](https://travis-ci.org/Prempeh-Gyan/1.0-Config-Service.svg?branch=master)](https://travis-ci.org/Prempeh-Gyan/1.0-Config-Service)
 
 ### Heroku
 To deploy this project to Heroku, update the [`configuration file`](https://github.com/Prempeh-Gyan/1.0-Config-Service/blob/master/src/main/resources/bootstrap.yml) to point to the Heroku locations of the dependent services before deploying this to Heroku.
