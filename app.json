@@ -1,0 +1,17 @@
+{
+    "name": "Config-Service",
+    "description": "Provides centralized configuration capabilities for managing config files of multiple services",
+    "repository": "https://github.com/Prempeh-Gyan/1.0-Config-Service",
+    "logo": "https://i.imgur.com/NaAbFil.png",
+    "success_url": "/",
+    "keywords": [
+        "Java",
+        "Spring",
+        "Config Server",
+        "Microservices"
+    ],
+    "env": {
+        "BUILDPACK_URL": "heroku/java"
+    },
+    "generator": "https://www.expeditedssl.com/heroku-button-maker"
+}
